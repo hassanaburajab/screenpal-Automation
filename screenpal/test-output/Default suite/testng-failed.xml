@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.UploadTest">
+      <class name="test.ProfileTest">
         <methods>
-          <include name="uploadValidVideo"/>
-          <include name="uploadInvalidFile"/>
+          <include name="updateDisplayNameWithInvalidData" invocation-numbers="0 1 2 3 4"/>
+          <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- test.UploadTest -->
+      </class> <!-- test.ProfileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

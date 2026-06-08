@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hassan aburajab\AppData\Local\Temp\testng-eclipse-1432248424\testng-customsuite.xml</span>
+                    <span>C:\Users\hassan aburajab\AppData\Local\Temp\testng-eclipse-238664604\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">14 methods, 5 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="updateDisplayNameWithInvalidData(hazem@#$, true, something wrong, Special characters)">updateDisplayNameWithInvalidData(hazem@#$, true, something wrong, Special characters)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="updateDisplayNameWithInvalidData(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)">updateDisplayNameWithInvalidData(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="updateDisplayNameWithInvalidData(, true, something wrong, Empty name)">updateDisplayNameWithInvalidData(, true, something wrong, Empty name)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="updateDisplayNameWithInvalidData(   , true, something wrong, Whitespace only)">updateDisplayNameWithInvalidData(   , true, something wrong, Whitespace only)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="updateDisplayNameWithInvalidData(&lt;script&gt;alert(1)&lt;/script&gt;, true, something wrong, XSS injection)">updateDisplayNameWithInvalidData(<script>alert(1)</script>, true, something wrong, XSS injection)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +137,47 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="invalidInputShouldNotBeSaved(hazem@#$, Special characters)">invalidInputShouldNotBeSaved(hazem@#$, Special characters)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="invalidInputShouldNotBeSaved(&lt;script&gt;alert(1)&lt;/script&gt;, XSS injection)">invalidInputShouldNotBeSaved(<script>alert(1)</script>, XSS injection)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="invalidInputShouldNotBeSaved(, Empty name)">invalidInputShouldNotBeSaved(, Empty name)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="invalidInputShouldNotBeSaved(   , Whitespace only)">invalidInputShouldNotBeSaved(   , Whitespace only)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="invalidInputShouldNotBeSaved(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)">invalidInputShouldNotBeSaved(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="openProfilePage">openProfilePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="updateDisplayName">updateDisplayName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="updateDisplayNameWithInvalidData(12345, false, , Numbers only)">updateDisplayNameWithInvalidData(12345, false, , Numbers only)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.ProfileTest" class="method navigator-link" hash-for-method="updateDisplayNameWithInvalidData(hazem123, false, , Contains numbers)">updateDisplayNameWithInvalidData(hazem123, false, , Contains numbers)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -123,12 +192,280 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDisplayNameWithInvalidData(hazem@#$, true, something wrong, Special characters)">
+                  </a> <!-- updateDisplayNameWithInvalidData(hazem@#$, true, something wrong, Special characters) -->
+                  <span class="method-name">updateDisplayNameWithInvalidData</span>
+                  <span class="parameters">(hazem@#$,true,something wrong,Special characters)</span>
+                  <div class="stack-trace">java.lang.AssertionError: [Special characters] Expected an error toast but got none expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1496)
+	at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Verify error or acceptance behavior for invalid first name inputs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDisplayNameWithInvalidData(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)">
+                  </a> <!-- updateDisplayNameWithInvalidData(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...) -->
+                  <span class="method-name">updateDisplayNameWithInvalidData</span>
+                  <span class="parameters">(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,true,something wrong,Exceeds max length)</span>
+                  <div class="stack-trace">java.lang.AssertionError: [Exceeds max length] Expected an error toast but got none expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1496)
+	at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Verify error or acceptance behavior for invalid first name inputs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDisplayNameWithInvalidData(, true, something wrong, Empty name)">
+                  </a> <!-- updateDisplayNameWithInvalidData(, true, something wrong, Empty name) -->
+                  <span class="method-name">updateDisplayNameWithInvalidData</span>
+                  <span class="parameters">(,true,something wrong,Empty name)</span>
+                  <div class="stack-trace">java.lang.AssertionError: [Empty name] Expected an error toast but got none expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1496)
+	at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Verify error or acceptance behavior for invalid first name inputs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDisplayNameWithInvalidData(   , true, something wrong, Whitespace only)">
+                  </a> <!-- updateDisplayNameWithInvalidData(   , true, something wrong, Whitespace only) -->
+                  <span class="method-name">updateDisplayNameWithInvalidData</span>
+                  <span class="parameters">(   ,true,something wrong,Whitespace only)</span>
+                  <div class="stack-trace">java.lang.AssertionError: [Whitespace only] Expected an error toast but got none expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1496)
+	at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Verify error or acceptance behavior for invalid first name inputs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDisplayNameWithInvalidData(&lt;script&gt;alert(1)&lt;/script&gt;, true, something wrong, XSS injection)">
+                  </a> <!-- updateDisplayNameWithInvalidData(<script>alert(1)</script>, true, something wrong, XSS injection) -->
+                  <span class="method-name">updateDisplayNameWithInvalidData</span>
+                  <span class="parameters">(<script>alert(1)</script>,true,something wrong,XSS injection)</span>
+                  <div class="stack-trace">java.lang.AssertionError: [XSS injection] Expected an error toast but got none expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1496)
+	at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Verify error or acceptance behavior for invalid first name inputs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">test.ProfileTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidInputShouldNotBeSaved(hazem@#$, Special characters)">
+                  </a> <!-- invalidInputShouldNotBeSaved(hazem@#$, Special characters) -->
+                  <span class="method-name">invalidInputShouldNotBeSaved</span>
+                  <span class="parameters">(hazem@#$,Special characters)</span>
+                  <em>
+(Verify field value is unchanged after a rejected save)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidInputShouldNotBeSaved(&lt;script&gt;alert(1)&lt;/script&gt;, XSS injection)">
+                  </a> <!-- invalidInputShouldNotBeSaved(<script>alert(1)</script>, XSS injection) -->
+                  <span class="method-name">invalidInputShouldNotBeSaved</span>
+                  <span class="parameters">(<script>alert(1)</script>,XSS injection)</span>
+                  <em>
+(Verify field value is unchanged after a rejected save)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidInputShouldNotBeSaved(, Empty name)">
+                  </a> <!-- invalidInputShouldNotBeSaved(, Empty name) -->
+                  <span class="method-name">invalidInputShouldNotBeSaved</span>
+                  <span class="parameters">(,Empty name)</span>
+                  <em>
+(Verify field value is unchanged after a rejected save)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidInputShouldNotBeSaved(   , Whitespace only)">
+                  </a> <!-- invalidInputShouldNotBeSaved(   , Whitespace only) -->
+                  <span class="method-name">invalidInputShouldNotBeSaved</span>
+                  <span class="parameters">(   ,Whitespace only)</span>
+                  <em>
+(Verify field value is unchanged after a rejected save)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidInputShouldNotBeSaved(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)">
+                  </a> <!-- invalidInputShouldNotBeSaved(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...) -->
+                  <span class="method-name">invalidInputShouldNotBeSaved</span>
+                  <span class="parameters">(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,Exceeds max length)</span>
+                  <em>
+(Verify field value is unchanged after a rejected save)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="openProfilePage">
@@ -143,12 +480,32 @@
                   <span class="method-name">updateDisplayName</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDisplayNameWithInvalidData(12345, false, , Numbers only)">
+                  </a> <!-- updateDisplayNameWithInvalidData(12345, false, , Numbers only) -->
+                  <span class="method-name">updateDisplayNameWithInvalidData</span>
+                  <span class="parameters">(12345,false,,Numbers only)</span>
+                  <em>
+(Verify error or acceptance behavior for invalid first name inputs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDisplayNameWithInvalidData(hazem123, false, , Contains numbers)">
+                  </a> <!-- updateDisplayNameWithInvalidData(hazem123, false, , Contains numbers) -->
+                  <span class="method-name">updateDisplayNameWithInvalidData</span>
+                  <span class="parameters">(hazem123,false,,Contains numbers)</span>
+                  <em>
+(Verify error or acceptance behavior for invalid first name inputs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hassan aburajab\AppData\Local\Temp\testng-eclipse-1432248424\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hassan aburajab\AppData\Local\Temp\testng-eclipse-238664604\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,20 +554,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openProfilePage')
+data.setCell(0, 1, 'updateDisplayNameWithInvalidData')
 data.setCell(0, 2, 'test.ProfileTest')
-data.setCell(0, 3, 33258);
+data.setCell(0, 3, 25882);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'updateDisplayName')
+data.setCell(1, 1, 'updateDisplayNameWithInvalidData')
 data.setCell(1, 2, 'test.ProfileTest')
-data.setCell(1, 3, 4085);
+data.setCell(1, 3, 25858);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateDisplayNameWithInvalidData')
+data.setCell(2, 2, 'test.ProfileTest')
+data.setCell(2, 3, 25596);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'updateDisplayNameWithInvalidData')
+data.setCell(3, 2, 'test.ProfileTest')
+data.setCell(3, 3, 25519);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'updateDisplayNameWithInvalidData')
+data.setCell(4, 2, 'test.ProfileTest')
+data.setCell(4, 3, 23343);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'openProfilePage')
+data.setCell(5, 2, 'test.ProfileTest')
+data.setCell(5, 3, 12169);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidInputShouldNotBeSaved')
+data.setCell(6, 2, 'test.ProfileTest')
+data.setCell(6, 3, 8805);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidInputShouldNotBeSaved')
+data.setCell(7, 2, 'test.ProfileTest')
+data.setCell(7, 3, 7730);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invalidInputShouldNotBeSaved')
+data.setCell(8, 2, 'test.ProfileTest')
+data.setCell(8, 3, 7488);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'invalidInputShouldNotBeSaved')
+data.setCell(9, 2, 'test.ProfileTest')
+data.setCell(9, 3, 7348);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invalidInputShouldNotBeSaved')
+data.setCell(10, 2, 'test.ProfileTest')
+data.setCell(10, 3, 7121);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'updateDisplayName')
+data.setCell(11, 2, 'test.ProfileTest')
+data.setCell(11, 3, 5519);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'updateDisplayNameWithInvalidData')
+data.setCell(12, 2, 'test.ProfileTest')
+data.setCell(12, 3, 5367);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'updateDisplayNameWithInvalidData')
+data.setCell(13, 2, 'test.ProfileTest')
+data.setCell(13, 3, 4778);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -243,15 +648,73 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">openProfilePage</span>
-                <span class="method-start">4991 ms</span>
+                <span class="method-start">3606 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateDisplayName</span>
-                <span class="method-start">38255 ms</span>
+                <span class="method-start">15782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateDisplayNameWithInvalidData(, true, something wrong, Empty name)</span>
+                <span class="method-start">21313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateDisplayNameWithInvalidData(   , true, something wrong, Whitespace only)</span>
+                <span class="method-start">47179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateDisplayNameWithInvalidData(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)</span>
+                <span class="method-start">72704 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateDisplayNameWithInvalidData(hazem@#$, true, something wrong, Special characters)</span>
+                <span class="method-start">98594 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateDisplayNameWithInvalidData(<script>alert(1)</script>, true, something wrong, XSS injection)</span>
+                <span class="method-start">124199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateDisplayNameWithInvalidData(hazem123, false, , Contains numbers)</span>
+                <span class="method-start">147548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateDisplayNameWithInvalidData(12345, false, , Numbers only)</span>
+                <span class="method-start">152919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidInputShouldNotBeSaved(, Empty name)</span>
+                <span class="method-start">157707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidInputShouldNotBeSaved(   , Whitespace only)</span>
+                <span class="method-start">165056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidInputShouldNotBeSaved(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)</span>
+                <span class="method-start">172787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidInputShouldNotBeSaved(hazem@#$, Special characters)</span>
+                <span class="method-start">180281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidInputShouldNotBeSaved(<script>alert(1)</script>, XSS injection)</span>
+                <span class="method-start">187404 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42341 ms</span>
+                <span class="method-start">196216 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

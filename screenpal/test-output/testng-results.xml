@@ -1,25 +1,477 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="9" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-05T12:20:12 TRT" name="Default suite" finished-at="2026-06-05T12:20:55 TRT" duration-ms="42635">
+  <suite started-at="2026-06-08T18:17:14 TRT" name="Default suite" finished-at="2026-06-08T18:20:31 TRT" duration-ms="196588">
     <groups>
     </groups>
-    <test started-at="2026-06-05T12:20:12 TRT" name="Default test" finished-at="2026-06-05T12:20:55 TRT" duration-ms="42635">
+    <test started-at="2026-06-08T18:17:14 TRT" name="Default test" finished-at="2026-06-08T18:20:31 TRT" duration-ms="196588">
       <class name="test.ProfileTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.ProfileTest@79079097]" started-at="2026-06-05T12:20:12 TRT" name="setup" finished-at="2026-06-05T12:20:17 TRT" duration-ms="4974" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:17:14 TRT" name="setup" finished-at="2026-06-08T18:17:18 TRT" duration-ms="3579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openProfilePage()[pri:1, instance:test.ProfileTest@79079097]" started-at="2026-06-05T12:20:17 TRT" name="openProfilePage" finished-at="2026-06-05T12:20:51 TRT" duration-ms="33258" status="PASS">
+        <test-method signature="openProfilePage()[pri:1, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:17:18 TRT" name="openProfilePage" finished-at="2026-06-08T18:17:30 TRT" duration-ms="12169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openProfilePage -->
-        <test-method signature="updateDisplayName()[pri:2, instance:test.ProfileTest@79079097]" started-at="2026-06-05T12:20:51 TRT" name="updateDisplayName" finished-at="2026-06-05T12:20:55 TRT" duration-ms="4085" status="PASS">
+        <test-method signature="updateDisplayName()[pri:2, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:17:30 TRT" name="updateDisplayName" finished-at="2026-06-08T18:17:36 TRT" duration-ms="5519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateDisplayName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.ProfileTest@79079097]" started-at="2026-06-05T12:20:55 TRT" name="tearDown" finished-at="2026-06-05T12:20:55 TRT" duration-ms="268" status="PASS">
+        <test-method signature="updateDisplayNameWithInvalidData(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:3, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:17:36 TRT" name="updateDisplayNameWithInvalidData" description="Verify error or acceptance behavior for invalid first name inputs" data-provider="invalidFirstNames" finished-at="2026-06-08T18:18:02 TRT" duration-ms="25858" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[something wrong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Empty name]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[[Empty name] Expected an error toast but got none expected object to not be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: [Empty name] Expected an error toast but got none expected object to not be null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.assertNotNull(Assert.java:1496)
+at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDisplayNameWithInvalidData -->
+        <test-method signature="updateDisplayNameWithInvalidData(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:3, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:18:02 TRT" name="updateDisplayNameWithInvalidData" description="Verify error or acceptance behavior for invalid first name inputs" data-provider="invalidFirstNames" finished-at="2026-06-08T18:18:27 TRT" duration-ms="25519" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[something wrong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Whitespace only]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[[Whitespace only] Expected an error toast but got none expected object to not be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: [Whitespace only] Expected an error toast but got none expected object to not be null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.assertNotNull(Assert.java:1496)
+at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDisplayNameWithInvalidData -->
+        <test-method signature="updateDisplayNameWithInvalidData(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:3, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:18:27 TRT" name="updateDisplayNameWithInvalidData" description="Verify error or acceptance behavior for invalid first name inputs" data-provider="invalidFirstNames" finished-at="2026-06-08T18:18:53 TRT" duration-ms="25882" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[something wrong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Exceeds max length]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[[Exceeds max length] Expected an error toast but got none expected object to not be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: [Exceeds max length] Expected an error toast but got none expected object to not be null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.assertNotNull(Assert.java:1496)
+at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDisplayNameWithInvalidData -->
+        <test-method signature="updateDisplayNameWithInvalidData(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:3, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:18:53 TRT" name="updateDisplayNameWithInvalidData" description="Verify error or acceptance behavior for invalid first name inputs" data-provider="invalidFirstNames" finished-at="2026-06-08T18:19:19 TRT" duration-ms="25596" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hazem@#$]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[something wrong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Special characters]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[[Special characters] Expected an error toast but got none expected object to not be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: [Special characters] Expected an error toast but got none expected object to not be null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.assertNotNull(Assert.java:1496)
+at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDisplayNameWithInvalidData -->
+        <test-method signature="updateDisplayNameWithInvalidData(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:3, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:19:19 TRT" name="updateDisplayNameWithInvalidData" description="Verify error or acceptance behavior for invalid first name inputs" data-provider="invalidFirstNames" finished-at="2026-06-08T18:19:42 TRT" duration-ms="23343" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<script>alert(1)</script>]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[something wrong]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[XSS injection]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[[XSS injection] Expected an error toast but got none expected object to not be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: [XSS injection] Expected an error toast but got none expected object to not be null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.assertNotNull(Assert.java:1496)
+at test.ProfileTest.updateDisplayNameWithInvalidData(ProfileTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDisplayNameWithInvalidData -->
+        <test-method signature="updateDisplayNameWithInvalidData(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:3, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:19:42 TRT" name="updateDisplayNameWithInvalidData" description="Verify error or acceptance behavior for invalid first name inputs" data-provider="invalidFirstNames" finished-at="2026-06-08T18:19:47 TRT" duration-ms="5367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hazem123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Contains numbers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDisplayNameWithInvalidData -->
+        <test-method signature="updateDisplayNameWithInvalidData(java.lang.String,boolean,java.lang.String,java.lang.String)[pri:3, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:19:47 TRT" name="updateDisplayNameWithInvalidData" description="Verify error or acceptance behavior for invalid first name inputs" data-provider="invalidFirstNames" finished-at="2026-06-08T18:19:52 TRT" duration-ms="4778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Numbers only]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDisplayNameWithInvalidData -->
+        <test-method signature="invalidInputShouldNotBeSaved(java.lang.String,java.lang.String)[pri:4, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:19:52 TRT" name="invalidInputShouldNotBeSaved" description="Verify field value is unchanged after a rejected save" data-provider="rejectedInputs" finished-at="2026-06-08T18:19:59 TRT" duration-ms="7348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Empty name]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidInputShouldNotBeSaved -->
+        <test-method signature="invalidInputShouldNotBeSaved(java.lang.String,java.lang.String)[pri:4, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:19:59 TRT" name="invalidInputShouldNotBeSaved" description="Verify field value is unchanged after a rejected save" data-provider="rejectedInputs" finished-at="2026-06-08T18:20:07 TRT" duration-ms="7730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Whitespace only]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidInputShouldNotBeSaved -->
+        <test-method signature="invalidInputShouldNotBeSaved(java.lang.String,java.lang.String)[pri:4, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:20:07 TRT" name="invalidInputShouldNotBeSaved" description="Verify field value is unchanged after a rejected save" data-provider="rejectedInputs" finished-at="2026-06-08T18:20:15 TRT" duration-ms="7488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Exceeds max length]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidInputShouldNotBeSaved -->
+        <test-method signature="invalidInputShouldNotBeSaved(java.lang.String,java.lang.String)[pri:4, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:20:15 TRT" name="invalidInputShouldNotBeSaved" description="Verify field value is unchanged after a rejected save" data-provider="rejectedInputs" finished-at="2026-06-08T18:20:22 TRT" duration-ms="7121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hazem@#$]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Special characters]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidInputShouldNotBeSaved -->
+        <test-method signature="invalidInputShouldNotBeSaved(java.lang.String,java.lang.String)[pri:4, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:20:22 TRT" name="invalidInputShouldNotBeSaved" description="Verify field value is unchanged after a rejected save" data-provider="rejectedInputs" finished-at="2026-06-08T18:20:31 TRT" duration-ms="8805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<script>alert(1)</script>]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[XSS injection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidInputShouldNotBeSaved -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.ProfileTest@61322f9d]" started-at="2026-06-08T18:20:31 TRT" name="tearDown" finished-at="2026-06-08T18:20:31 TRT" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
